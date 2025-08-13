@@ -28,7 +28,7 @@
     "bson-objectid": "2.0.4",
     "glob": "^8.1.0",
     "gray-matter": "4.0.3",
-    "inquirer": "8.2.6",
+    "inquirer": "8.2.7",
     "prettier": "3.2.5",
     "ts-node": "10.9.2",
     "typescript": "5.2.2"
