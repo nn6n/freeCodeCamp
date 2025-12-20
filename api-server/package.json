@@ -25,7 +25,9 @@
     "common-setup": "pnpm -w run create:shared",
     "predevelop": "pnpm common-setup",
     "develop": "node src/development-start.js",
-    "start": "DEBUG=fcc* node lib/production-start.js"
+    "start": "DEBUG=fcc* node lib/production-start.js",
+    "prepare": "pnpm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@freecodecamp/loopback-component-passport": "1.2.0",
@@ -53,7 +55,7 @@
     "jsonwebtoken": "8.5.1",
     "lodash": "4.17.21",
     "loopback": "3.28.0",
-    "loopback-boot": "2.28.0",
+    "loopback-boot": "3.1.1",
     "loopback-connector-mongodb": "5.6.0",
     "method-override": "3.0.0",
     "moment": "2.29.3",
@@ -74,7 +76,8 @@
     "stripe": "8.205.0",
     "strong-error-handler": "3.5.0",
     "uuid": "3.4.0",
-    "validator": "13.7.0"
+    "validator": "13.7.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "7.17.10",
@@ -87,5 +90,6 @@
     "@babel/register": "7.17.7",
     "loopback-component-explorer": "6.4.0",
     "nodemon": "2.0.16"
-  }
+  },
+  "snyk": true
 }
